@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "kisstkondoros.vscode-gutter-preview",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens"
+  ]
+}

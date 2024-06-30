@@ -1,0 +1,17 @@
+# Windows, Mac
+Thumbs.db
+*.DS_Store
+._*
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Others
+build
+dist
+public/uploads

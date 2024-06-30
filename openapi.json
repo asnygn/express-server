@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Express Server",
+    "version": "1.0"
+  },
+  "servers": [{ "url": "http://localhost:3000" }],
+  "paths": {
+    "/v1/auth/login": {
+      "post": {
+        "tags": ["auth"],
+        "summary": "User login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string" },
+                  "password": { "type": "string" }
+                },
+                "required": ["email", "password"]
+              },
+              "example": {
+                "email": "admin@nomail.com",
+                "password": "admin"
+              }
+            }
+          }
+        },
+        "responses": { "200": { "description": "Success" } }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme.",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

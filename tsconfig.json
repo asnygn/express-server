@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "build",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@/api/*": ["api/*"],
+      "@/constants/*": ["constants/*"],
+      "@/databases/*": ["databases/*"],
+      "@/middlewares/*": ["middlewares/*"],
+      "@/plugins/*": ["plugins/*"],
+      "@/services/*": ["services/*"],
+      "@/types/*": ["types/*"],
+      "@/utils/*": ["utils/*"]
+    }
+  }
+}
